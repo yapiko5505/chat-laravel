@@ -11,6 +11,7 @@ class PersonController extends Controller
 {
     //
 
+    // rogin
     public function __construct()
     {
         $this->middleware('auth');
