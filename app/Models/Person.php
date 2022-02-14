@@ -13,7 +13,7 @@ class Person extends Model
 
     public static $rules = array(
         'name' => 'required',
-        'mail' => 'required',
+        'mail' => 'email',
         'work' => 'required'
 
     );
