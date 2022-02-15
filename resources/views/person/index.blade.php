@@ -23,13 +23,13 @@
 <table>
     @csrf
     <tr><th>Person</th><th>Board</tr>
-        @foreach ($hasItems as $item)
+        @foreach ($items as $item)
             <tr>
                 <td>{{$item->getData()}}</td>
                 <td>
                     <table width="100%">
-                    @foreach ($item->boards as $obj)
-                        <tr><td>{{$obj->getData()}}</td></tr>
+                    @foreach ($item->boards != null)
+                        <tr><td>{{$item->board->getData()}}</td></tr>
                     @endforeach
                     </table>
                 </td>
@@ -37,16 +37,6 @@
         @endforeach
 </table>
 
-<div style="margin:10px;"></div>
-<table>
-    @csrf
-    <tr><th>Person</th></tr>
-    @foreach ($noItems as $item)
-        <tr>
-            <td>{{$item->getData()}}</td>
-        </tr>
-    @endforeach
-</table>
 @endsection
 
 @section('footer')

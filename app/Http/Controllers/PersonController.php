@@ -20,9 +20,10 @@ class PersonController extends Controller
     public function index(Request $request)
     {
         $user = Auth::user();
-        $hasItems = Person::has('boards')->get();
-        $noItems = Person::doesntHave('boards')->get();
-        $param = ['hasItems' =>$hasItems, 'noItems' => $noItems, 'user' => $user];
+        // $hasItems = Person::has('boards')->get();
+        // $noItems = Person::doesntHave('boards')->get();
+        // $param = ['hasItems' =>$hasItems, 'noItems' => $noItems, 'user' => $user];
+        $items = Person::all();
         return view('person.index', $param);
     }
 
