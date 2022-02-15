@@ -28,7 +28,7 @@
                 <td>{{$item->getData()}}</td>
                 <td>
                     <table width="100%">
-                    @foreach ($item->boards != null)
+                    @foreach ($item->board != null)
                         <tr><td>{{$item->board->getData()}}</td></tr>
                     @endforeach
                     </table>
