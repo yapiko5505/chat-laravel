@@ -19,10 +19,10 @@ class Board extends Model
         'message' => 'required'
     );
 
-    public function person()
-    {
-        return $this->belongsTo('App\Models\Person');
-    }
+    // public function person()
+    // {
+        // return $this->belongsTo('App\Models\Person');
+    // }
 
     public function getData()
     {

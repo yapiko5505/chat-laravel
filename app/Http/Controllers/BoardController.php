@@ -14,7 +14,7 @@ class BoardController extends Controller
     public function index(Request $request)
     { 
         
-        $items = Board::with('person')->get();
+        $items = Board::all();
         $items = Board::simplePaginate(5);
         return view('board.index', ['items' => $items]);
     }
