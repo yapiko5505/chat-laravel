@@ -26,6 +26,6 @@ class Board extends Model
 
     public function getData()
     {
-        return $this->id . ':' . $this->title . '(' . $this->person->name . ')';
+        return $this->id . ':' . $this->title ;
     }
 }
