@@ -39,6 +39,7 @@
 
 <div style="margin:10px;"></div>
 <table>
+    @csrf
     <tr><th>Person</th></tr>
     @foreach ($noItems as $item)
         <tr>
