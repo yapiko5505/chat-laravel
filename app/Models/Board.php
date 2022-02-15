@@ -9,6 +9,8 @@ class Board extends Model
 {
     use HasFactory;
 
+    protected $table = 'boards';
+
     protected $guarded = array('id');
 
     public static $rules = array(
