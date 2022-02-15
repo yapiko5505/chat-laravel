@@ -21,7 +21,7 @@
 <form action="/board/add" method="post">
     <table>
         @csrf
-        <tr><th>person_id:</th><td><input type="number" name="person_id"></td></tr>
+        <tr><th>persons_id:</th><td><input type="number" name="persons_id"></td></tr>
         <tr><th>title:</th><td><input type="text" name="title"></td></tr>
         <tr><th>message:</th><td><input type="text" name="message"></td></tr>
         <tr><th></th><td><input type="submit" value="登録"></td><tr>
