@@ -27,10 +27,10 @@ class BoardController extends Controller
     public function create(Request $request)
     {
         $this->validate($request, Board::$rules);
-        $person = new Board;
+        $board = new Board;
         $form = $request->all();
         unset($form['_token']);
-        $person->fill($form)->save();
+        $board->fill($form)->save();
         return redirect('/board');
     }
 }
