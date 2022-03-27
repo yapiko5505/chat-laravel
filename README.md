@@ -1,6 +1,7 @@
 # chat-laravel
 
  laravel自主制作の掲示板サンプルです。
+ 名簿ページと掲示板ページがあります。
  
  # デモ
  [webサイト](https://yasuko-chat-laravel.herokuapp.com/person)
